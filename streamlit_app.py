@@ -54,7 +54,7 @@ if "df" not in st.session_state:
         "Status": np.random.choice(["Ghosted", "No Response", "Fake"], size=100),
         "Priority": np.random.choice(["High", "Medium", "Low"], size=100),
         "Date Submitted": [
-            datetime.date(2023, 6, 1) + datetime.timedelta(days=random.randint(0, 182))
+            datetime.date(2024, 6, 1) + datetime.timedelta(days=random.randint(0, 182))
             for _ in range(100)
         ],
     }
@@ -93,12 +93,12 @@ if submitted:
     )
 
     # Show a little success message.
-    st.write("Ticket submitted! Here are the ticket details:")
+    st.write("Job submitted! Here are the Job details:")
     st.dataframe(df_new, use_container_width=True, hide_index=True)
     st.session_state.df = pd.concat([df_new, st.session_state.df], axis=0)
 
 # Show section to view and edit existing tickets in a table.
-st.header("Existing tickets")
+st.header("Existing jobs")
 st.write(f"Number of jobs applied: `{len(st.session_state.df)}`")
 
 st.info(
@@ -117,7 +117,7 @@ edited_df = st.data_editor(
         "Status": st.column_config.SelectboxColumn(
             "Status",
             help="Ticket status",
-            options=["Open", "In Progress", "Closed"],
+            options=["Ghosted", "No response", "Fake job"],
             required=True,
         ),
         "Priority": st.column_config.SelectboxColumn(
