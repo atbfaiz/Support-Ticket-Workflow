@@ -25,25 +25,25 @@ if "df" not in st.session_state:
 
     # Make up some fake issue descriptions.
     issue_descriptions = [
-        "Social Media Executive and Web Design role at Heart Of The City Properties LLC"
-"Social Media Specialist position at Be Createch FZE"
-"Part-Time Social Media Specialist position at Tradeverse (Black Mamba UAE)"
-"Marketing Executive position"
-"Content Creator role at Nasij"
-"Payroll Clerk position"
-"Marketing Assistant position at Buffalo Wings & Rings Dubai"
-"Remote Social Media Marketer role at Joseph Mews"
-"Content Creator/Social Media Executive position in Dubai"
-"Digital Marketing Specialist position at Quick Action"
-"Digital Marketing Manager role at Great Minds Event Management"
-"Social Media Marketing Executive position at Trace Hospitality"
-"Digital Marketing Specialist position at Al Douri Group"
-"Sr. Marketing role at Levex Exchange"
-"Office Manager position at Levex Exchange"
-"Marketing Specialist position at Alaseel Cosmetics"
-"Social Media Marketing Specialist role at Nejoum Al Jazeera"
-"Social Media & Digital Marketing Executive position at XHQ - UAE Headquarters"
-"Design role at Automattic"
+        "Social Media Executive and Web Design role at Heart Of The City Properties LLC",
+"Social Media Specialist position at Be Createch FZE",
+"Part-Time Social Media Specialist position at Tradeverse (Black Mamba UAE)",
+"Marketing Executive position",
+"Content Creator role at Nasij",
+"Payroll Clerk position",
+"Marketing Assistant position at Buffalo Wings & Rings Dubai",
+"Remote Social Media Marketer role at Joseph Mews",
+"Content Creator/Social Media Executive position in Dubai",
+"Digital Marketing Specialist position at Quick Action",
+"Digital Marketing Manager role at Great Minds Event Management",
+"Social Media Marketing Executive position at Trace Hospitality",
+"Digital Marketing Specialist position at Al Douri Group",
+"Sr. Marketing role at Levex Exchange",
+"Office Manager position at Levex Exchange",
+"Marketing Specialist position at Alaseel Cosmetics",
+"Social Media Marketing Specialist role at Nejoum Al Jazeera",
+"Social Media & Digital Marketing Executive position at XHQ - UAE Headquarters",
+"Design role at Automattic",
 "Social Media role at Binance",
     ]
 
