@@ -7,13 +7,13 @@ import pandas as pd
 import streamlit as st
 
 # Show app title and description.
-st.set_page_config(page_title="Support ticket workflow", page_icon="🎫")
-st.title("🎫 Support ticket workflow")
+st.set_page_config(page_title="Track my career journey in Dubai", page_icon="🎫")
+st.title("🎫 Track my career journey in Dubai")
 st.write(
     """
-    This app shows how you can build an internal tool in Streamlit. Here, we are 
-    implementing a support ticket workflow. The user can create a ticket, edit 
-    existing tickets, and view some statistics.
+    Here's all the jobs I've applied and been applying in all possible
+    ways including sending best in class emails, LinkedIn DMs, company websites, 
+    even completing the unpaid work assignmnts as part of recruitment process but SHIT.
     """
 )
 
@@ -25,26 +25,26 @@ if "df" not in st.session_state:
 
     # Make up some fake issue descriptions.
     issue_descriptions = [
-        "Network connectivity issues in the office",
-        "Software application crashing on startup",
-        "Printer not responding to print commands",
-        "Email server downtime",
-        "Data backup failure",
-        "Login authentication problems",
-        "Website performance degradation",
-        "Security vulnerability identified",
-        "Hardware malfunction in the server room",
-        "Employee unable to access shared files",
-        "Database connection failure",
-        "Mobile application not syncing data",
-        "VoIP phone system issues",
-        "VPN connection problems for remote employees",
-        "System updates causing compatibility issues",
-        "File server running out of storage space",
-        "Intrusion detection system alerts",
-        "Inventory management system errors",
-        "Customer data not loading in CRM",
-        "Collaboration tool not sending notifications",
+        "Social Media Executive and Web Design role at Heart Of The City Properties LLC"
+"Social Media Specialist position at Be Createch FZE"
+"Part-Time Social Media Specialist position at Tradeverse (Black Mamba UAE)"
+"Marketing Executive position"
+"Content Creator role at Nasij"
+"Payroll Clerk position"
+"Marketing Assistant position at Buffalo Wings & Rings Dubai"
+"Remote Social Media Marketer role at Joseph Mews"
+"Content Creator/Social Media Executive position in Dubai"
+"Digital Marketing Specialist position at Quick Action"
+"Digital Marketing Manager role at Great Minds Event Management"
+"Social Media Marketing Executive position at Trace Hospitality"
+"Digital Marketing Specialist position at Al Douri Group"
+"Sr. Marketing role at Levex Exchange"
+"Office Manager position at Levex Exchange"
+"Marketing Specialist position at Alaseel Cosmetics"
+"Social Media Marketing Specialist role at Nejoum Al Jazeera"
+"Social Media & Digital Marketing Executive position at XHQ - UAE Headquarters"
+"Design role at Automattic"
+"Social Media role at Binance",
     ]
 
     # Generate the dataframe with 100 rows/tickets.
@@ -66,13 +66,13 @@ if "df" not in st.session_state:
 
 
 # Show a section to add a new ticket.
-st.header("Add a ticket")
+st.header("Track yours")
 
 # We're adding tickets via an `st.form` and some input widgets. If widgets are used
 # in a form, the app will only rerun once the submit button is pressed.
 with st.form("add_ticket_form"):
-    issue = st.text_area("Describe the issue")
-    priority = st.selectbox("Priority", ["High", "Medium", "Low"])
+    issue = st.text_area("Describe the Job")
+    priority = st.selectbox("Priority", ["Ghosted", "Rejected", "No response"])
     submitted = st.form_submit_button("Submit")
 
 if submitted:
@@ -99,7 +99,7 @@ if submitted:
 
 # Show section to view and edit existing tickets in a table.
 st.header("Existing tickets")
-st.write(f"Number of tickets: `{len(st.session_state.df)}`")
+st.write(f"Number of jobs applied: `{len(st.session_state.df)}`")
 
 st.info(
     "You can edit the tickets by double clicking on a cell. Note how the plots below "
